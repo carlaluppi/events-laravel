@@ -1,45 +1,51 @@
-<div class="relative bg-white">
-    <div class="mx-auto max-w-7xl px-6">
-      <div class="flex items-center justify-between border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
-        <div class="flex justify-start lg:w-0 lg:flex-1">
-          <a href="#">
-            <span class="sr-only">Your Company</span>
-            <img class="h-8 w-auto sm:h-10" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
-          </a>
-        </div>
-        <div class="-my-2 -mr-2 md:hidden">
-          <button type="button" class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false">
-            <span class="sr-only">Open menu</span>
-            <!-- Heroicon name: outline/bars-3 -->
-            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
-          </button>
-        </div>
-        <nav class="hidden space-x-10 md:flex">
-          <div class="relative">
-  
-        <div class="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
-          <a href="#" class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">Sign in</a>
-          <a href="#" class="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700">Log in</a>
-        </div>
-      </div>
-    </div>
-  
-    <!--
-      Mobile menu, show/hide based on mobile menu state.
-  
-      Entering: "duration-200 ease-out"
-        From: "opacity-0 scale-95"
-        To: "opacity-100 scale-100"
-      Leaving: "duration-100 ease-in"
-        From: "opacity-100 scale-100"
-        To: "opacity-0 scale-95"
-    -->
 
-          </div>
+
+
+
+<nav
+class="w-screen overflow-scroll bg-white border-b white:bg-slate-900 border-slate-900/10 lg:px-8 white:border-slate-300/10 lg:mx-0">
+<div class="px-4 mx-auto max-w-7xl sm:px-16 lg:px-20">
+    <div class="relative flex items-center justify-between h-16">
+        <div class="flex items-center justify-center flex-1 sm:items-stretch sm:justify-start">
+            <div class="flex items-center flex-shrink-0">
+                <a href="/">
+                    <svg class="w-8 h-8 text-sky-500" fill="none" width="0" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                        <path
+                            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z">
+                        </path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+            <div class="mx-auto">
+                <div class="flex space-x-4">
+                    <!-- Active: 'text-sky-600 dark:text-white', Inactive 'text-slate-400' -->
+                    <a href="/"
+                        class="px-3 py-2 text-sm font-medium rounded-md hover:text-sky-600 dark:hover:text-dark {{ request()->routeIs('/') ? 'text-sky-600' : 'text-slate-400' }}">
+                        Home
+                    </a>
+                    <!-- Active: 'text-sky-600 dark:text-white', Inactive 'text-slate-400' -->
+                    <a href=""
+                        class="px-3 py-2 text-sm font-medium rounded-md hover:text-sky-600 dark:hover:text-dark {{ request()->routeIs('posts.*') ? 'text-sky-600' : 'text-slate-400' }} ">
+                        Blog
+                    </a>
+                    <!-- Active: 'text-sky-600 dark:text-white', Inactive 'text-slate-400' -->
+                    <a href="/about"
+                        class="px-3 py-2 text-sm font-medium rounded-md hover:text-sky-600 dark:hover:text-dark {{ request()->routeIs('about') ? 'text-sky-600' : 'text-slate-400' }}"">
+                        About
+                    </a>
+                    <!-- Active: 'text-sky-600 dark:text-white', Inactive 'text-slate-400' -->
+                    <a href=""
+                        class="px-3 py-2 text-sm font-medium rounded-md hover:text-sky-600 dark:hover:text-dark {{ request()->routeIs('contact') ? 'text-sky-600' : 'text-slate-400' }}"">
+                        Contact
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-  
+</div>
+</nav> 

@@ -16,3 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+// Route::get('', [PostController::class, 'create'])->name('users.singup');
+
+// Route::get('/singup', 'signup' )->name('users.singUp');
+
+// Route::get('/singup', function () {
+//     return view('users.singUp');
+// });
